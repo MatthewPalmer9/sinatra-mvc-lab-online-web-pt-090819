@@ -23,8 +23,8 @@ class PigLatinizer
     words.join(" ")
   end
 
-  def vowel?(letter)
-    letter.downcase
-    letter == "o" || letter == "e" || letter == "a" || letter == "i" || letter == "u"
+  def vowel?(text)
+    text = 'aeiouAEIOU'
+    vowels.include?(word[0])
   end
 end
