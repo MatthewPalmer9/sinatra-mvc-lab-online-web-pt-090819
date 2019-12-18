@@ -9,7 +9,7 @@ class PigLatinizer
       until vowel?(letters[0])
         letters << letters.shift
       end
-      letters << "way"
+      letters << "ay"
     elsif letters.first.scan(/[aeiou]/)
       letters << "way"
     end
