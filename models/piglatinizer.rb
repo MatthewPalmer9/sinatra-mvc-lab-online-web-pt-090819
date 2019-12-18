@@ -4,7 +4,6 @@ class PigLatinizer
     if self.vowel?(word)
       word.concat('way')
     else
-      word.concat(word.slice!(/^[^aeiou]*/i || "")) + 'ay'
       word.concat(word.slice!(/^[^aeiouAEIOU]*/i || "")) + 'ay'
     end
   end
