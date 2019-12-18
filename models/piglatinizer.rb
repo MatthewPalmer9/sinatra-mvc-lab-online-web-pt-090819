@@ -10,7 +10,7 @@ class PigLatinizer
 
   def piglatinize(text)
     words = text.split(" ")
-    words.map!{|word| piglatinize(word)}
+    words.map!{|word| toPigLatin(word)}
     words.join(" ")
   end
 
