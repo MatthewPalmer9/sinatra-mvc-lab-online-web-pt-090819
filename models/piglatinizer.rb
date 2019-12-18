@@ -11,7 +11,7 @@ class PigLatinizer
       end
       letters << "ay"
     elsif letters.size = 1
-      letters << "way"
+      letters[0] << "way"
     end
 
     letters.join()
