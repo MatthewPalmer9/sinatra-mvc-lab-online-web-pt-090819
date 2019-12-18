@@ -10,7 +10,7 @@ class PigLatinizer
         letters << letters.shift
       end
       letters << "ay"
-    elsif letters.size = 1
+    elsif letters.size == 1
       letters[0] << "way"
     end
 
