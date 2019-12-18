@@ -1,6 +1,6 @@
 class PigLatinizer
 
-  def piglatinize(word)
+  def toPigLatin(word)
     if self.vowel?(word)
       word.concat('way')
     else
@@ -8,7 +8,7 @@ class PigLatinizer
     end
   end
 
-  def toPigLatin(text)
+  def piglatinize(text)
     words = text.split(" ")
     words.map!{|word| piglatinize(word)}
     words.join(" ")
