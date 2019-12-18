@@ -24,7 +24,7 @@ class PigLatinizer
   end
 
   def vowel?(text)
-    letter = 'aeiouAEIOU'
-    text.include?(word[0])
+    vowels = 'aeiouAEIOU'
+    vowels.include?(word[0])
   end
 end
