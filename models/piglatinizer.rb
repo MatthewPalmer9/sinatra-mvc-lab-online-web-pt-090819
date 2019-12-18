@@ -14,7 +14,7 @@ class PigLatinizer
     words.join(" ")
   end
 
-  def vowel?(text)
+  def vowel?(word)
     vowels = 'aeiouAEIOU'
     vowels.include?(word[0])
   end
