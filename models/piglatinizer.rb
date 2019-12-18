@@ -10,7 +10,7 @@ class PigLatinizer
         letters << letters.shift
       end
       letters << "ay"
-    elsif letters.size == 1
+    elsif letters.first.scan(/[aeiou]/)
       letters[0] << "way"
     end
 
