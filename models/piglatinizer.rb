@@ -5,13 +5,13 @@ class PigLatinizer
     letters = text.split("")
     letters.keep_if {|letter| letter != "."}
 
-    if letters.first.scan(/[aeiou]/)
-      letters[0] << "way"
-    elsif letters.size > 1
+    if letters.size > 1
       until vowel?(letters[0])
         letters << letters.shift
       end
       letters << "ay"
+    elsif letters.first.scan(/[aeiou]/)
+      letters << "way"
     end
 
     letters.join()
